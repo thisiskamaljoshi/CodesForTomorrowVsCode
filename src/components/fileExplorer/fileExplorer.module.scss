@@ -25,7 +25,7 @@
     position: relative;
     color: #ccc;
     margin:5px;
-    display: block;
+    display: flex;
     padding-inline-start: 16px;
     &::before {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12px' height='12px' viewBox='0 0 1024 1024' class='icon' version='1.1'%3E%3Cpath d='M242.3 743.4h603.4c27.8 0 50.3-22.5 50.3-50.3V192H192v501.1c0 27.8 22.5 50.3 50.3 50.3z' fill='%23FFEA00'/%3E%3Cpath d='M178.3 807.4h603.4c27.8 0 50.3-22.5 50.3-50.3V256H128v501.1c0 27.8 22.5 50.3 50.3 50.3z' fill='%23FFFF8D'/%3E%3Cpath d='M960 515v384c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64V383.8c0-35.3 28.7-64 64-64h344.1c24.5 0 46.8 13.9 57.5 35.9l46.5 95.3H896c35.3 0 64 28.7 64 64z' fill='%233D5AFE'/%3E%3Cpath d='M704 512c0-20.7-1.4-41.1-4.1-61H576.1l-46.5-95.3c-10.7-22-33.1-35.9-57.5-35.9H128c-35.3 0-64 28.7-64 64V899c0 6.7 1 13.2 3 19.3C124.4 945 188.5 960 256 960c247.4 0 448-200.6 448-448z' fill='%23536DFE'/%3E%3C/svg%3E");
@@ -40,9 +40,15 @@
     padding-inline-start: 15px;
 }
 
+.deleteHandler{
+    padding-inline-start: 5px;
+    display: inline-block;
+}
+
 .explorerFile{
     color: #ccc;
     margin: 3px;
+    display: flex;
     padding-inline-start: 20px;
     position: relative;
     &::before {

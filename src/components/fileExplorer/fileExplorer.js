@@ -29,6 +29,7 @@ const starterFiles = [
           {
             key:"1.2.2",
             name: "Social App",
+            isFolder: false,
             children: [
               {
                 name: "Person",
@@ -49,7 +50,8 @@ const starterFiles = [
 
 const fileExplorerFolderHandler = (folder) => {
   return <>
-    <p className={styles.explorerFolder}>{folder.name}</p>
+    <input className={styles.hiddenCheckBox} type="checkbox" id={folder.key+folder.name} name={folder.key+folder.name}/>
+    <label for={folder.key+folder.name} className={styles.explorerFolder}>{folder.name}</label>
     <div className={styles.explorerFolderContent}>
         {fileExplorerFileHandler(folder.children)}
     </div>

@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// import { createContext } from 'react';
+// const UserContext = createContext(undefined);
+// const UserDispatchContext = createContext(undefined);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
